@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio showcasing web development projects, skills, and experience. Specializing in modern web applications with cutting-edge technologies.">
+    <meta name="keywords" content="web developer, portfolio, full stack developer, frontend, backend, projects">
+    <meta name="author" content="Ghulam Muhammad">
+    <title>Ghulam Muhammad | Software Engineering Student</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <p class="hero-subtitle">👋 Welcome to my portfolio</p>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Ghulam Muhammad</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text" id="typingText">Software Engineering Student</span>
+                </h2>
+                <p class="hero-description">
+                    I'm a passionate software engineering student at FAST University, specializing in
+                    C/C++, Python, computer vision, and web development. I love building innovative solutions
+                    and creating engaging digital experiences.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="assets/profile.png" alt="Profile Picture" class="floating">
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Software Engineering Student & Developer</h3>
+                    <p>
+                        I'm currently pursuing my degree in Software Engineering at FAST University,
+                        where I'm building a strong foundation in computer science and software development.
+                        My passion lies in creating efficient solutions through clean, well-structured code.
+                    </p>
+                    <p>
+                        I have hands-on experience with C/C++ for systems programming, Python for automation
+                        and data processing, and OpenCV for computer vision projects. I also enjoy web
+                        development with HTML and CSS, and I have skills in video editing to bring creative
+                        projects to life.
+                    </p>
+                    <p>
+                        I'm always eager to learn new technologies and take on challenging projects that
+                        push my boundaries. My goal is to become a well-rounded software engineer who can
+                        tackle diverse technical challenges.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">FAST</div>
+                            <div class="stat-label">University</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Facial Recognition -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/project1.png" alt="Facial Recognition Attendance System" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Facial Recognition Attendance System</h3>
+                        <p class="project-description">
+                            An intelligent attendance tracking system using facial recognition technology with SQL
+                            database integration for automated student attendance management.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Face Recognition</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Muhammad-SE-Eng" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Database Management -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/project2.png" alt="Student Database Management System" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Student Database Management System</h3>
+                        <p class="project-description">
+                            Comprehensive database system for managing student records, evaluating quiz scores,
+                            assignments, and final exams with integrated face recognition attendance.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Database Design</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Face Recognition</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Muhammad-SE-Eng" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Parking System -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/project3.png" alt="Smart Parking Management System" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Smart Parking Management System</h3>
+                        <p class="project-description">
+                            Multi-level parking system with automated fee calculation based on time and vehicle type,
+                            featuring real-time availability tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">System Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Muhammad-SE-Eng" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Instagram Content -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/project4.png" alt="Instagram Content Creation" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Instagram Content Creation</h3>
+                        <p class="project-description">
+                            Successfully grew Instagram page to 16K+ followers with engaging video content, achieving
+                            1M+ views on reels through creative video editing and storytelling.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Video Editing</span>
+                            <span class="tag">Content Creation</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">16K Followers</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-instagram"></i> 1M+ Views
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">C/C++</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML & CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Vision & Libraries -->
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-eye"></i> Computer Vision</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">OpenCV</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Image Processing</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">NumPy</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Data Structures</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Creative -->
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-tools"></i> Tools & Creative</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Video Editing</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">VS Code & IDEs</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Problem Solving</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content fade-in">
+                <p style="text-align: center; margin-bottom: 2rem;">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.
+                </p>
+
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://github.com/Muhammad-SE-Eng" target="_blank" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-986b2637a/" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:m1hamxd0@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ghulam Muhammad. Built with passion and code. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
